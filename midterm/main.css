@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+    box-sizing: border-box;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	padding: 10px 20px;
+	color: #000;
+}
+h1{
+	font-size: 2.25rem;	
+	font-family: "Pacifico", cursive;
+    text-align: center;
+    color: #14145e;
+}
+h2{
+	font-size: 2rem;	
+	font-family: "Kreon", serif;
+    clear: both;
+}
+h3{
+	font-size: 1.5rem;
+	font-family: "Kreon", serif;
+	color: #191975;
+    text-align: center;
+}
+p, li, a{
+    font-weight: 400;
+	font-family: "Open Sans Condensed", sans-serif;
+	color: #000;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 0.85rem;
+}
+.nav:before,
+.nav:after{
+  content:"";
+  display:table;
+}
+.nav:after{
+  clear:both;
+}
+
+/***********************************
+					Layout
+***********************************/
+.wrapper{
+	background-color: #fff;	
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer{
+	clear:both;
+}
+.main{
+    padding: 15px 10px ;   
+}
+.two {
+    background-color: #e8e8f1;
+    padding: 15px 10px;
+    margin:px;
+}
+.three {
+    background-color: #d1d1e3;
+    padding: 15px 10px ;
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+    color: #161669;	
+	background-color: #fff;
+}
+
+/***********************************
+					Navigation
+***********************************/
+.navbar {
+    width: 100%;   
+}
+.navbar li {
+    float:left;	
+    width: 50%;  
+    list-style:none;
+}
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #5e5e9e;
+    border-style: solid;
+    border-width: 3px;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #121252;
+}
+
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #fff;	
+	background-color: #161669;
+}
+
+/***********************************
+        Media Queries
+***********************************/
+@media all and (max-width: 499px){
+ /* default settings - did not include additional info */
+}
+
+@media all and (max-width: 719px) and (min-width: 500px){
+    .navbar {
+       width: 100%; 
+    }
+    .navbar li{	
+        float:left;	
+        width: 25%;  
+        list-style:none;
+    }
+    a {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 1.20rem;   
+    }
+    .main {
+        width: 100%;
+        clear: both;
+    }
+    .two {
+        width: 49%;
+        float: left;
+        margin-left: 4px;
+    }
+    .three {
+        width: 49%;
+        float: left;
+        margin-left: 2px;
+    }
+    h1 {
+        font-size: 2.75rem;
+    }
+    h2 {
+        font-size: 2.25rem; 
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media all and (max-width: 1080px) and (min-width: 720px){
+    .navbar {
+       width: 100%; 
+    }
+    .navbar li{	
+	   float:left;	
+	   width: 25%;  
+	   list-style:none;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1.3rem;   
+    }
+    .main {
+        width: 58%;
+        float: left;   
+    }
+    .two {
+        width: 20%;
+        float: left;
+        margin-right: 2px;
+    }
+    .three {
+        width: 20%;
+        float: left;
+    }
+    h1 {
+        font-size: 3.25rem;
+    }
+    h2 {
+        font-size: 2.75rem; 
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (min-width: 1081px) {
+    .navbar{
+        width: 15%;
+        float: left; 
+    }
+    .nav:before,
+    .nav:after{
+        content:"";
+        display:inline;
+    }
+    .nav:after{
+        clear:none;
+    }
+    .nav li {
+        width: 100%;  
+    }
+    .main {
+        width: 47%;
+        float: left;
+    }
+     a {
+        font-size: 1.4rem;
+    }
+    p {
+        font-size: 1.45rem;   
+    }
+    .two {
+        width: 18%;
+        float: left;
+    }
+    .three {
+        width: 18%;
+        float: left;
+        margin-left: 2px;
+    }
+    h1 {
+        font-size: 4.25rem;
+    }
+    h2 {
+        font-size: 3rem; 
+    }
+    h3 {
+        font-size: 2rem;
+    }
+}
